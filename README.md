@@ -8,13 +8,13 @@ The Survivr2 project will combine your knowledge of Ruby's object orientation an
 Learning how to work in a TDD workflow is a very useful skill as a developer. Many of the worlds best developers work with TDD and are comfortable using tests to ensure their code works. Automated testing can save you massive headaches in the future and will help you find your bugs much faster. This project will also solidify your knowledge of object orientation and Ruby mechanics in general, since some of the tests are tricky and require knowledge of return values, standard output and object inspection.
 
 ## Getting started
-Go to the 'tests.rb' file FIRST. This will contain the information required to start running your tests. If you feel overwhelmed by the amount of files or tests that you are running, take a deep breath, and read the instruction. You will survive!
+Go to the 'tests.rb' file FIRST. This will contain the information required to start running your tests. You will survive!
 
 ## Completing this Project
 Complete all of the following requirements to finish Survivr2:
 * **Tests**: Make all of the tests pass.
 * **Simulation**: Ensure the simulation is in line with the game mechanics described in the prep lesson.
-* **Colorizr**: Once the tests pass and the simulation is accurate then use your Colorizr gem to ad color to the text output to the terminal. You may want to color the tribe names, the contestant names, the winners or anything else. Get creative with your colorizing, it will surely help visibility.
+* **Colorizr**: Once the tests pass and the simulation is accurate then use your Colorizr gem to ad color to the text output to the terminal. You will have to at least the tribe names. You may also want to color the contestant names, the winners or anything else. Get creative with your colorizing, it will surely help visibility.
 * **Tips**:
   * Make sure that you are writing just enough code to make the tests pass. Refactor your code once you are happy with the passing test.
 
