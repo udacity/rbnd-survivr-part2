@@ -1,10 +1,10 @@
 require 'minitest/autorun'
-require_relative "contestant"
+require_relative "../lib/contestant"
 
 
 class TestContestant < Minitest::Test
   def setup
-    @contestants = %w(walter ed gabe diego juliana johanna juha sofia ben lenora weston dena zach jon seanh seans david ari anthony adriana)
+    @contestants = %w(carlos walter aparna trinh diego juliana poornima juha sofia julia fernando dena orit colt zhalisa farrin muhammed ari rasha gauri)
     @contestants.map!{ |contestant| Contestant.new(contestant) }.shuffle!
   end
 

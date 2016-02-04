@@ -1,12 +1,12 @@
 require 'minitest/autorun'
-require_relative "game"
-require_relative "tribe"
-require_relative "contestant"
+require_relative "../lib/game"
+require_relative "../lib/tribe"
+require_relative "../lib/contestant"
 
 class TestGame < Minitest::Test
 
   def setup
-    @contestants = %w(walter ed gabe diego juliana johanna juha sofia ben lenora weston dena zach jon seanh seans david ari anthony adriana)
+    @contestants = %w(carlos walter aparna trinh diego juliana poornima juha sofia julia fernando dena orit colt zhalisa farrin muhammed ari rasha gauri)
     @contestants.map!{ |contestant| Contestant.new(contestant) }
     @coyopa = Tribe.new({name: "Pagong", members: @contestants.shift(10)})
     @hunapu = Tribe.new({name: "Tagi", members: @contestants.shift(10)})
@@ -22,7 +22,7 @@ class TestGame < Minitest::Test
   # end
   #
   # def test_add_tribe
-  #   contestants = ["one", "two"]
+  #   contestants = ["person_one", "person_two"]
   #   contestants.map!{ |contestant| Contestant.new(contestant) }
   #   tribe_three = Tribe.new({name: "tribe", members: contestants})
   #   assert_equal 3, @borneo.add_tribe(tribe_three).length

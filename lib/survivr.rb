@@ -6,7 +6,7 @@ require_relative "jury"
 #After your tests pass, uncomment this code below
 #=========================================================
 # # Create an array of twenty hopefuls to compete on the island of Borneo
-# @contestants = %w(walter ed gabe diego juliana johanna juha sofia ben lenora weston dena zach jon seanh seans david ari anthony adriana)
+# @contestants = %w(carlos walter aparna trinh diego juliana poornima juha sofia julia fernando dena orit colt zhalisa farrin muhammed ari rasha gauri)
 # @contestants.map!{ |contestant| Contestant.new(contestant) }.shuffle!
 #
 # # Create two new tribes with names

@@ -14,6 +14,6 @@ require_relative "contestant_test" #once all the tests here pass, uncomment the 
 # require_relative "game_test"
 #
 # #5
-# require_relative "survivr"
+# require_relative "survivr_test"
 
 #Once you pass all tests, uncomment the code in survivr.rb to run your full simulation!

@@ -1,14 +1,14 @@
 require 'minitest/autorun'
-require_relative "survivr"
-require_relative "game"
-require_relative "tribe"
-require_relative "contestant"
-require_relative "jury"
+require_relative "../lib/survivr"
+require_relative "../lib/game"
+require_relative "../lib/tribe"
+require_relative "../lib/contestant"
+require_relative "../lib/jury"
 
 class TestTribe < Minitest::Test
 
   def setup
-    @contestants = %w(walter ed gabe diego juliana johanna juha sofia ben lenora weston dena zach jon seanh seans david ari anthony adriana)
+    @contestants = %w(carlos walter aparna trinh diego juliana poornima juha sofia julia fernando dena orit colt zhalisa farrin muhammed ari rasha gauri)
     @contestants.map!{ |contestant| Contestant.new(contestant) }
     @coyopa = Tribe.new({name: "Pagong", members: @contestants.shift(10)})
     @hunapu = Tribe.new({name: "Tagi", members: @contestants.shift(10)})
@@ -23,7 +23,7 @@ class TestTribe < Minitest::Test
   # end
   #
   # def test_initialize_puts_tribe_creation
-  #   contestants = ["one", "two"]
+  #   contestants = ["person_one", "person_two"]
   #   contestants.map!{ |contestant| Contestant.new(contestant) }
   #   output = capture_io do
   #     Tribe.new({name: "tribe", members: contestants})

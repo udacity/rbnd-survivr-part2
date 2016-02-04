@@ -1,11 +1,11 @@
 require 'minitest/autorun'
-require_relative "contestant"
-require_relative "jury"
+require_relative "../lib/contestant"
+require_relative "../lib/jury"
 
 class TestJury < Minitest::Test
 
   def setup
-    @jury_members = %w(walter ed gabe diego juliana johanna juha)
+    @jury_members = %w(carlos walter aparna trinh diego juliana poornima)
     @jury_members.map!{ |member| Contestant.new(member) }
     @finalists = %w(orit colt)
     @finalists.map!{ |member| Contestant.new(member) }
