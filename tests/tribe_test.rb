@@ -46,6 +46,6 @@ class TestTribe < Minitest::Test
   #
   # def test_tribal_council_returns_who_was_voted_off
   #   immune = @coyopa.members.first
-  #   assert_equal 1, [@coyopa.tribal_council(immune)].count
+  #   assert_instance_of Contestant, @coyopa.tribal_council(immune: immune)
   # end
 end
