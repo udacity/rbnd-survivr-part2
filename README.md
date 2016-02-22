@@ -14,7 +14,7 @@ Go to the 'tests.rb' file FIRST. This will contain the information required to s
 Complete all of the following requirements to finish Survivr2:
 * **Tests**: Make all of the tests pass.
 * **Simulation**: Ensure the simulation is in line with the game mechanics described in the prep lesson.
-* **Colorizr**: Once the tests pass and the simulation is accurate then use your Colorizr gem to add color to the text output of the terminal. You will have to at least the tribe names. You may also want to color the contestant names, the winners or anything else. Get creative with your colorizing, it will surely help visibility.
+* **Colorizr**: Once the tests pass and the simulation is accurate then use your Colorizr gem to add color to the text output of the terminal. You will have to color at least the tribe names. You may also want to color the contestant names, the winners or anything else. Get creative with your colorizing, it will surely help visibility.
 * **Tips**:
   * Make sure that you are writing just enough code to make the tests pass. Refactor your code once you are happy with the passing test.
 
