@@ -17,6 +17,11 @@ class Tribe
   end
 
   def tribal_council(options)
-    Contestant.new(options[:immune])
+    immune = options[:immune]
+    rejected = @members.sample
+    while(immune == rejected)
+      rejected = @members.sample
+    end
+    rejected
   end
 end

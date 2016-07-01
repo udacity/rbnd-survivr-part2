@@ -39,7 +39,8 @@ def phase_two
   dead = []
   puts "="*38
   3.times do
-    rejected = @borneo.individual_immunity_challenge
+    immune = @borneo.individual_immunity_challenge
+    rejected = @merge_tribe.tribal_council(immune: immune)
     dead.push(rejected)
     print "#{rejected}"
     print " "*(14 - rejected.to_s.length)
@@ -52,7 +53,8 @@ end
 def phase_three
   puts "="*38
   7.times do
-    jury_member = @borneo.individual_immunity_challenge
+    immune = @borneo.individual_immunity_challenge
+    jury_member = @merge_tribe.tribal_council(immune: immune)
     print "#{jury_member}"
     print " "*(14 - jury_member.to_s.length)
     puts "[" + "Added as a jury member".green + "]"

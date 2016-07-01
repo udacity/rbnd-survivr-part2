@@ -1,18 +1,12 @@
 class Jury
+  attr_accessor :members
+
   def initialize
     @members = []
   end
 
   def add_member(member)
     @members.push(member)
-  end
-
-  def members
-    @members
-  end
-
-  def members=(jury_members)
-    @members = jury_members
   end
 
   def cast_votes(finalists)
@@ -26,6 +20,8 @@ class Jury
       print "["
       print "#{vote}".pink if finalists[0] == vote
       print "#{vote}".yellow if finalists[1] == vote
+      #I know this isn't the best practice but, I only have like, 7 colors to choose from, so, if I have more contestants, it's critical to have 7 the most.
+      #If I make it so it dynamically chooses colors and prints the contestants, I'll have a big problem if I go over 7, so I'll just have a very limited amount instead :)
       print "]\n"
     end
     votes
@@ -42,9 +38,7 @@ class Jury
   end
 
   def announce_winner(final_votes)
-    val1 = final_votes.values[0]
-    val2 = final_votes.values[1]
-    val1 > val2 ? (winner = final_votes.keys[0]) : (winner = final_votes.keys[1])
+    winner = final_votes.key(final_votes.values.max)
     print "The winner is..."
     puts "#{winner}".pink if winner == final_votes.keys[0]
     puts "#{winner}".yellow if winner == final_votes.keys[1]
