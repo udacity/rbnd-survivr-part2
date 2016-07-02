@@ -25,14 +25,12 @@ def phase_one
   puts "="*38
   8.times do
     losing_tribe = @borneo.immunity_challenge
-    rejected = losing_tribe.members.sample
+    rejected = losing_tribe.tribal_council(immune: nil)
     print "#{rejected}"
     print " "*(14 - rejected.to_s.length)
     puts "[" + "X".red + "]"
     dead.push(rejected)
-    losing_tribe.members.delete(rejected)
   end
-  dead.length
 end
 
 def phase_two
@@ -45,9 +43,7 @@ def phase_two
     print "#{rejected}"
     print " "*(14 - rejected.to_s.length)
     puts "[" + "X".red + "]"
-    @merge_tribe.members.delete(rejected)
   end
-  dead.length
 end
 
 def phase_three
@@ -59,9 +55,7 @@ def phase_three
     print " "*(14 - jury_member.to_s.length)
     puts "[" + "Added as a jury member".green + "]"
     @jury.add_member(jury_member)
-    @merge_tribe.members.delete(jury_member)
   end
-  @jury.members.length
 end
 
 
