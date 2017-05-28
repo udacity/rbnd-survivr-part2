@@ -27,11 +27,11 @@ class TestSurvivr < Minitest::Test
     assert_equal 8, phase_one
   end
 
-  # def test_phase_two
-  #   assert_equal 3, phase_two
-  # end
-  #
-  # def test_phase_three
-  #   assert_equal 7, phase_three
-  # end
+  def test_phase_two
+    assert_equal 3, phase_two
+  end
+  
+  def test_phase_three
+    assert_equal 7, phase_three
+  end
 end
